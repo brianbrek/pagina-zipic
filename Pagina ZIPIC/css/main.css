@@ -1,0 +1,57 @@
+/* Reset css */
+*{ font-family: 'Lato', sans-serif; padding: 0; margin: 0; box-sizing: border-box; }
+body { height: 100%; }
+
+/* Seccion izquierda */
+.izquierda { background-image: url('../assets/img/fondo6.png'); background-size: cover; background-repeat: no-repeat;background-color: rgba(28, 28, 25, 0.88);color: #ffffff;position: fixed;top: 0; left: 0; min-width: 30%; height: 100%; display: flex;flex-direction: column;justify-content: space-between;padding: 80px 20px 20px 20px;align-items: flex-start; }
+.info, .footer { margin-left: 30px; }
+.info h3 { font-weight:900; }
+.footer h6 i { font-size: 14px; margin-right:5px }
+.phone { color: #ffffff; }
+.contacto { margin-top: 50px; }
+
+/* Seccion derecha */
+.derecha { color: #ffffff; margin-left: 30%; width: 70%; height: 100%; background-repeat: no-repeat; background-size: cover; }
+.contenedor { display: flex; width: 100%; }
+.uno { display: flex; height: 300px; align-items: center; }
+.uno h1 { color: #ffffff; margin-left: 80px; font-size: 35px; }
+.uno h4 { color: #303030; margin-left: 20px; font-size: 40px; margin-top: -40px; font-weight: 900; }
+.dos { background-image: url('../assets/img/iphone.png'); background-size: cover; flex:1; }
+.dos h5 { color: #303030; margin-left: 40px; padding-top: 20px; }
+.dos h6 { color: #303030;margin-left: 40px; }
+.tres { flex-basis: 200px; }
+.cuatro { background-image: url('../assets/img/ux.jpg'); background-size: cover; flex-basis: 200px; }
+.cuatro h5 { color: #ffffff; margin-left: 10px; padding-top: 10px;}
+.cinco { flex:1; }
+.seis { background-image: url('../assets/img/tygard.png'); background-size: cover; flex-basis: 200px; }
+.siete { flex-basis: 200px; }
+.infodos { height: auto; width:100%; z-index: 2; }
+.white { color: black; background-image: url('../assets/img/fondo6.png'); }
+.cuadrado { height: 200px; }
+.parallax-container { width: 70%; margin-left: 30%; height: 100%!important; color: #ffffff!important; background-size: cover; }
+.boton { font-family: 'Lato', sans-serif; width: 200px; height: 50px; border-radius: 25px; box-shadow: none; border: 1px solid rgb(236, 79, 210); background-color: transparent; color: #ffffff; }
+.boton:hover { background-color: rgb(236, 79, 210); color: #ffffff; transition: all 0.5s; }
+.icon-block h2 i { font-size: 45px; color: rgb(110, 111, 119); }
+.text-centered { text-align: center; }
+
+@media (max-width: 1024px) {
+    .izquierda { position: relative; padding: 20px; align-items: flex-start; }
+    .derecha { margin-left: 0; width: auto; background-size: cover; height: 100%; }
+    .contacto { margin-top: 0px; }   
+    .parallax-container { color: #ffffff!important; margin-left: 0; width: auto; height: 100%; }
+    .row { margin-top: -20px; }
+}
+
+@media (max-width: 594px) {
+    .izquierda { font-size: 20px; }
+    .contacto { margin-top: 0px; }
+    .parallax-container { margin-left: 0; width: auto; align-content: center; height: 100%; }
+    .contenedor { flex-direction: column; }
+    .uno { display: none; }
+    .uno h1 { margin-left: 0; text-align: center; font-size: 30px; }
+    .tres, .cinco, .siete { display: none; }
+    .row { margin-top: -20px; }
+
+}
+    
+ 
